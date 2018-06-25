@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+img {
+  width: 70%;
+  padding-top: 2.2em;
+}
+
+
+p {
+  margin: 0 12%;
+}
+
+
+/*Navbar*/
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E0EBE8;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+}
+
+
+.main-header .name {
+  font-family: 'Great Vibes', cursive;
+  margin-left: 1.5em;
+}
+
+.main-header .name,
+.nav-items a {
+  color: #0d7e83;
+  font-size: 0.8em;
+}
+
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  align-items: center
+}
+
+
+.nav-items a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-right: 1.5em;
+}
+
+
+/*Banner*/
+.banner {
+  background-image: url('images/coding.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+}
+
+.wrapper {
+  height: 220px;
+}
+
+
+.wrapper h2, p{
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+
+.wrapper h2 {
+  font-size: 1.2rem;
+  margin: 4rem 0;
+  letter-spacing: 1.2px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 800;
+}
+
+.wrapper p {
+  font-size: 0.9em;
+  margin-top:1.3em;
+}
+
+/*About-me*/
+.container {
+  background-color: #ffb6b9;
+}
+
+.about {
+  text-align: center;
+  color: white;
+  padding-top: 1em;
+}
+
+.comp-lang {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.8em;
+  padding-bottom: 2.2em;
+}
+
+
+.comp-lang img {
+  margin: 0 1em;
+  width: 6%;
+  padding: 0;
+  height: 50%;
+}
+
+
+/*Content*/
+.signhow,
+.wokout {
+  text-align: center;
+}
+
+.project-1 {
+  color: #fceaea;
+  background-color: #427996;
+  text-align: center;
+}
+
+
+.project-2 {
+  color: #427996;
+  background-color: #fceaea;
+  text-align: center;
+}
+
+
+.project-1,
+.project-2 {
+  padding-bottom: 2.8em;
+}
+
+.project-1 h2,
+.project-2 h2,
+.about h2 {
+  font-size: 1.6em;
+}
+
+
+.project-1 h3,
+.project-2 h3 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.project-1 p {
+  color: #fceaea;
+}
+
+.project-2 p {
+  color: #427996;
+}
+
+
+.project-1 p,
+.project-2 p,
+.about p {
+  font-size: 1em;
+}
+
+
+.project-1 p,
+.project-2 p,
+.btn a {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.4em;
+}
+
+.btn a{
+  padding: 0.6em 1em;
+  border: 2.5px solid white;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.05em;
+  vertical-align: text-bottom;
+  transition: 0.6s;
+  font-size: 0.7em;
+  font-weight: 800;
+}
+
+
+.btn a:hover {
+  background-color: white;
+  color: #427996;
+}
+
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+
+/*Footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #c5ded7;
+  padding: 0.8em 0;
+}
+
+
+.fa {
+  color: #0d7e83;
+  font-size: 0.8em;
+  letter-spacing: 0.8em;
+}
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0.2em 0;
+}
+
+
+.copyright p {
+  color: #0d7e83;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.6em;
+}
+
+
+.contact {
+  display: flex;
+  align-self: center
+}
+
+
+/*Media Query*/
+
+/*min-width: 424px*/
+@media only screen and (min-width: 424px) {
+  .wrapper p {
+    font-size: 0.9em;
+    margin: 2em 20%;
+  }
+
+}
+
+
+/*min-width: 768px*/
+
+@media only screen and (min-width: 768px) {
+  .main-header .name, .nav-items a {
+    font-weight: 800;
+  }
+
+
+  p {
+    margin: 0 20%;
+  }
+
+  .banner {
+    background-image: url('images/coding-lg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.6;
+  }
+
+  .wrapper {
+    height: 368px;
+  }
+
+  .wrapper p {
+    font-size: 1em;
+    margin: 0.2em 30%;
+  }
+
+  .wrapper h2 {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+}
+
+/*min-width: 1024px*/
+
+@media only screen and (min-width: 1024px) {
+
+  .main-header {
+    padding: 0.6em 2.8em;
+  }
+
+  .nav-items a,
+  .main-header .name{
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    font-weight: 800;
+  }
+
+  .banner {
+    background-image: url('images/coding-lg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+    margin-top: 6.5em;
+    min-height: 60rem;
+  }
+
+  .project-1 h2, .project-2 h2, .about h2 {
+    font-size: 2.6em;
+  }
+
+  .project-1 p, .project-2 p, .about p {
+    font-size: 1.6em;
+    padding-bottom: 1rem;
+  }
+
+  .main-header {
+    padding: 0.2em 3em;
+  }
+
+
+  .wrapper {
+    height: 720px;
+  }
+
+  .wrapper h2{
+    font-size: 4rem;
+    padding-top: 9rem;
+  }
+
+
+  .about {
+    padding-top: 3em;
+  }
+
+
+  .comp-lang {
+      padding-bottom: 5em;
+  }
+
+  img {
+    padding-top: 6.2em;
+  }
+
+  .btn a {
+    font-size: 1.2rem;
+    padding: 0.8em 1.2em;
+  }
+
+  .project-1 h3, .project-2 h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-1, .project-2 {
+    padding-bottom: 5.8em;
+  }
+
+  .copyright {
+    margin: 1.4em 0;
+  }
+
+  .copyright p {
+    font-size: 1.2rem;
+  }
+
+  .fa {
+    font-size: 1.8rem !important;
+    letter-spacing: 0;
+    margin: 0 1em;
+  }
+
+  .contact {
+    margin: 0.5rem 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
